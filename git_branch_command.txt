@@ -20,3 +20,72 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git add -A
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git_branch_command.txt
+
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git commit -m "commit to branch1"
+[branch1 39b8770] commit to branch1
+ 1 file changed, 22 insertions(+)
+ create mode 100644 git_branch_command.txt
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git log
+commit 39b87700e78f6b3c651a0e1e90b633e8cf79edf3 (HEAD -> branch1)
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 01:22:09 2020 +0530
+
+    commit to branch1
+
+commit 2a22a6bc4dbb5f3653b953e2853e5d9fb5db6b7f (origin/master, master)
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:36:52 2020 +0530
+
+    fouth version v4.0
+
+commit 1c496ad7f24cdaec3f9251464cda215aada60c92
+Author: Devashish Nigam <46449047+devashish89@users.noreply.github.com>
+Date:   Mon Aug 17 00:33:16 2020 +0530
+
+    Update git_commands.txt
+
+    third commit v3.0
+
+commit 5e21aac01c5abfb70836f2ad355214d92b39958c
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:20:48 2020 +0530
+
+    second commit v2.0
+
+commit 7438d18a27fc77f89922db0fe97eeb176edbd14f
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:11:14 2020 +0530
+
+    first commit v1.0
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git remote add origin branch1
+fatal: remote origin already exists.
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git push -u origin branch1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 602 bytes | 602.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/devashish89/Git-Tutorial/pull/new/branch1
+remote:
+To https://github.com/devashish89/Git-Tutorial.git
+ * [new branch]      branch1 -> branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
