@@ -49,4 +49,77 @@ To https://github.com/devashish89/Git-Tutorial.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_commands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git add -A
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git_commands.txt
+
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git commit -m "second commit v2.0"
+[master 5e21aac] second commit v2.0
+ 1 file changed, 52 insertions(+)
+ create mode 100644 git_commands.txt
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git log
+commit 5e21aac01c5abfb70836f2ad355214d92b39958c (HEAD -> master)
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:20:48 2020 +0530
+
+    second commit v2.0
+
+commit 7438d18a27fc77f89922db0fe97eeb176edbd14f (origin/master)
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:11:14 2020 +0530
+
+    first commit v1.0
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git remote add orgin master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 934 bytes | 934.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/devashish89/Git-Tutorial.git
+   7438d18..5e21aac  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git log
+commit 5e21aac01c5abfb70836f2ad355214d92b39958c (HEAD -> master, origin/master)
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:20:48 2020 +0530
+
+    second commit v2.0
+
+commit 7438d18a27fc77f89922db0fe97eeb176edbd14f
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:11:14 2020 +0530
+
+    first commit v1.0
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
 $
