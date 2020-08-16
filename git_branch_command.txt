@@ -88,4 +88,56 @@ remote:      https://github.com/devashish89/Git-Tutorial/pull/new/branch1
 remote:
 To https://github.com/devashish89/Git-Tutorial.git
  * [new branch]      branch1 -> branch1
-Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.'
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git branch
+* branch1
+  master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch
+  branch1
+* master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git merge branch1
+Updating 2a22a6b..c88d26d
+Fast-forward
+ git_branch_command.txt | 91 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 91 insertions(+)
+ create mode 100644 git_branch_command.txt
+
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git add -A
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch
+  branch1
+* master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/devashish89/Git-Tutorial.git
+   2a22a6b..c88d26d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+
+
+
