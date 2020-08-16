@@ -122,4 +122,41 @@ Date:   Mon Aug 17 00:11:14 2020 +0530
     first commit v1.0
 
 91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
-$
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.56 KiB | 106.00 KiB/s, done.
+From https://github.com/devashish89/Git-Tutorial
+ * branch            master     -> FETCH_HEAD
+   5e21aac..1c496ad  master     -> origin/master
+Updating 5e21aac..1c496ad
+Fast-forward
+ git_commands.txt | 73 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 73 insertions(+)
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git log
+commit 1c496ad7f24cdaec3f9251464cda215aada60c92 (HEAD -> master, origin/master)
+Author: Devashish Nigam <46449047+devashish89@users.noreply.github.com>
+Date:   Mon Aug 17 00:33:16 2020 +0530
+
+    Update git_commands.txt
+
+    third commit v3.0
+
+commit 5e21aac01c5abfb70836f2ad355214d92b39958c
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:20:48 2020 +0530
+
+    second commit v2.0
+
+commit 7438d18a27fc77f89922db0fe97eeb176edbd14f
+Author: Devashish Nigam <devashish.nigam89@gmail.com>
+Date:   Mon Aug 17 00:11:14 2020 +0530
+
+    first commit v1.0
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+
