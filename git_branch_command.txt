@@ -1,0 +1,22 @@
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch branch1
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git branch
+* branch1
+  master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
+$ git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_branch_command.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (branch1)
