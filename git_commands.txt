@@ -1,0 +1,52 @@
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial
+$ git init
+Initialized empty Git repository in C:/Users/91836/Documents/Git-tutorial/.git/
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git add -A
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git commit -m "first commit v1.0"
+[master (root-commit) 7438d18] first commit v1.0
+ 2 files changed, 2 insertions(+)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git remote add origin https://github.com/devashish89/Git-Tutorial.git
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 274 bytes | 137.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/devashish89/Git-Tutorial.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$
