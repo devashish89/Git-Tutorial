@@ -1,0 +1,12 @@
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch -d branch1
+Deleted branch branch1 (was c88d26d).
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git branch
+* master
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git push origin --delete branch1
+To https://github.com/devashish89/Git-Tutorial.git
+ - [deleted]         branch1
