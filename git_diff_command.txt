@@ -1,0 +1,37 @@
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git diff
+diff --git a/2.txt b/2.txt
+index d7fd3d5..c08ec77 100644
+--- a/2.txt
++++ b/2.txt
+@@ -1 +1 @@
+-hello file2
+\ No newline at end of file
++hello file2 --change
+\ No newline at end of file
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git diff 2.txt
+diff --git a/2.txt b/2.txt
+index d7fd3d5..c08ec77 100644
+--- a/2.txt
++++ b/2.txt
+@@ -1 +1 @@
+-hello file2
+\ No newline at end of file
++hello file2 --change
+\ No newline at end of file
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
