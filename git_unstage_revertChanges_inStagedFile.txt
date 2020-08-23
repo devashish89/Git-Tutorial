@@ -1,0 +1,74 @@
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_diff_staged.txt
+
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git reset 1.txt
+Unstaged changes after reset:
+M       1.txt
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git checkout 1.txt
+Updated 1 path from the index
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+        modified:   2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_diff_staged.txt
+        git_unstage_revertChanges_inStagedFile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git diff
+diff --git a/1.txt b/1.txt
+index 237f5af..8e3d22f 100644
+--- a/1.txt
++++ b/1.txt
+@@ -1 +1 @@
+-hello file1
+\ No newline at end of file
++hello file1 --changes to reverted
+\ No newline at end of file
+diff --git a/2.txt b/2.txt
+index c08ec77..7d1eb39 100644
+--- a/2.txt
++++ b/2.txt
+@@ -1 +1 @@
+-hello file2 --change
+\ No newline at end of file
++hello file2 --change -- reverted
+\ No newline at end of file
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git checkout .
+Updated 2 paths from the index
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$ git diff
+
+91836@LAPTOP-00MU5FI2 MINGW64 ~/Documents/Git-tutorial (master)
+$
